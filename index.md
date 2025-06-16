@@ -11,9 +11,7 @@ You should comment out all portions of your portfolio that you have not complete
 |:--:|:--:|:--:|:--:|
 | Alan B | Crocker Middle School | Electrical Engineering | Incoming 8th Grader
 
-**Replace the BlueStamp logo below with an image of yourself and your completed project. Follow the guide [here](https://tomcam.github.io/least-github-pages/adding-images-github-pages-site.html) if you need help.**
-
-![Headstone Image](logo.svg)
+![Headstone Image](WIN_20250616_16_24_52_Pro.jpg)
   
 # Final Milestone
 
