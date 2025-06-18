@@ -56,7 +56,6 @@ For your first milestone, describe what your project is and how you plan to buil
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 <iframe width="914" height="514" src="https://www.youtube.com/embed/PsNnBoVI7NY?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 My starter project was a RGB light. It is able to change into any color depending on how much red, green, and blue light is outputted. I plan to solder all the parts together so it can last for a long time. There are three sliders that control the amount of red, green, and blue light that is seen. I first placed the LED in the wrong way which cuased it to not work.
 
 
