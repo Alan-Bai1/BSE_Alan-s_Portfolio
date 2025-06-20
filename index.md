@@ -1,6 +1,6 @@
 # BlueStamp Biometric Health Monitor
 The biometric health monitor is able to check a person's heartbeat at any time. There were many challenges including [insert challenges]. However, I learned to not give up and was able to [hopefully] complete the project.
-```Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!```
+Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
 You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
 ```HTML 
@@ -8,13 +8,13 @@ You should comment out all portions of your portfolio that you have not complete
 <!--- Anything between these symbols will not render on the published site -->
 ```
 
-```| **Engineer** | **School** | **Area of Interest** | **Grade** |
+| **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|```
 | Alan B | Crocker Middle School | Electrical Engineering | Incoming 8th Grader
 
 ![Headstone Image](WIN_20250616_16_24_52_Pro.jpg)
   
-```# Final Milestone
+# Final Milestone
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
@@ -69,13 +69,13 @@ For me, it was challenging in multiple ways. For example, I thought the longest 
 
 Now that I am done with my starter project, I will use the knowledge of circuits and soldering to make my intensive project. My intensive project is the biometric health monitor.
 
-```# Schematics 
+# Schematics 
 ![Headstone Image] (Screenshot 2025-06-20 135255.png)
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-```c++
+c++
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(9600);
