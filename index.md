@@ -81,17 +81,18 @@ Figure 2 - Circuit diagram of pulse sensor and display monitor connected
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
 c++
-``void setup() {
+```
+void setup() {
   // initialize digital pin LED_12 as an output.
-  pinMode(LED_12, OUTPUT);
-}
+    pinMode(LED_12, OUTPUT);
+  }
 
 void loop() {
   digitalWrite(LED_12, HIGH);  // turn the LED on (HIGH is the voltage level)
   delay(1000);                      // wait for a second
   digitalWrite(LED_12, LOW);   // turn the LED off by making the voltage LOW
   delay(1000);                      
-}
+  }
 
 ```
 
