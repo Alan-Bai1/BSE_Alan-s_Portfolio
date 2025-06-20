@@ -44,7 +44,17 @@ For your second milestone, explain what you've worked on since your previous mil
 
 <iframe width="914" height="514" src="https://www.youtube.com/embed/a8BoErUSUk4?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor, arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). However, I faced many challenges. For example, I as a beginner in arduino coding and had no idea how analog pins work. I also had some trouble with the wiring and finding the right parts. Moving on, I will need to code more to detect high heartbeats, a buzzer to alert you about any problems with your heartbeat, and classify cardio zones. I plan to code the rest of the project in the next milestone and then put it together later to make it portable.
+# Description
+
+The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor, arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). 
+
+# Challenges
+
+However, I faced many challenges. For example, I as a beginner in arduino coding and had no idea how analog pins work. I also had some trouble with the wiring and finding the right parts.
+
+# Next Steps
+
+Moving on, I will need to code more to detect high heartbeats, a buzzer to alert you about any problems with your heartbeat, and classify cardio zones. I plan to code the rest of the project in the next milestone and then put it together later to make it portable.
 
 
 
@@ -58,7 +68,7 @@ The RGB light is able to change into any color by changing the amount of red, gr
 
 # Challenges
 
-For me, it was challenging in multiple ways. For example, I thought the longest wire was the positive side which although was true for most LED's, was not the case for the multi color one. Thus, I accidentaly placed it the wrong way and fixed it later. I also never soldered before so I was kind of scared of having a 400 degrees celsius rod in my hands. However, I was able to finish the project successfuly.
+For me, it was challenging in multiple ways. For example, I thought the longest wire was the positive side which although was true for most LED's, was not the case for the multi color one. Thus, I accidentally placed it the wrong way and fixed it later. I also never soldered before so I was kind of scared of having a 400 degrees celsius rod in my hands. However, I was able to finish the project successfuly.
 
 # Next Steps
 
