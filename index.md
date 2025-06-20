@@ -42,21 +42,14 @@ For your second milestone, explain what you've worked on since your previous mil
 
 # First Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="914" height="514" src="https://www.youtube.com/embed/a8BoErUSUk4?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Milestone 1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor, arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). However, I faced many challenges. For example, I was a beginner in arduino coding and had no idea how analog pins work. I also had some trouble with the wiring and finding the right parts. Moving on, I will need to code more to detect high heartbeats and more. I plan to code the rest of the project in the next milestone and then put it together later to make it portable.
+The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor, arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). However, I faced many challenges. For example, I as a beginner in arduino coding and had no idea how analog pins work. I also had some trouble with the wiring and finding the right parts. Moving on, I will need to code more to detect high heartbeats, a buzzer to alert you about any problems with your heartbeat, and classify cardio zones. I plan to code the rest of the project in the next milestone and then put it together later to make it portable.
 
-For your first milestone, describe what your project is and how you plan to build it. You can include:
-- An explanation about the different components of your project and how they will all integrate together
-- Technical progress you've made so far
-- Challenges you're facing and solving in your future milestones
-- What your plan is to complete your project```
+
 
 # Starter Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 <iframe width="914" height="514" src="https://www.youtube.com/embed/PsNnBoVI7NY?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Description
@@ -80,7 +73,7 @@ Figure 2 - Circuit diagram of pulse sensor and display monitor connected
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
 
-c++
+
 ```
 void setup() {
   // initialize digital pin LED_12 as an output.
