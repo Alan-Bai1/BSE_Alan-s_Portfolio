@@ -82,34 +82,35 @@ Now that I am done with my starter project, I will use the knowledge of circuits
 
 # Schematics 
 <p align="center">
-![Headstone Image](Screenshot_2025-06-20_145014.png)
+  ![Headstone Image](Screenshot_2025-06-20_145014.png)
 
-Figure 1 - Circuit diagram of LED circuit
-
-
-![Headstone Image](Screenshot_2025-06-20_135255.png)
-
-Figure 2 - Circuit diagram of pulse sensor and display monitor connected
+  Figure 1 - Circuit diagram of LED circuit
 
 
-![Headstone Image](Screenshot_2025-06-30_150714.png)
-
-Figure 3 - Circuit diagram of joystick, LCD, and pulse sensor connected to the arduino
-
-
-![Headstone Image](PulseSensor-Schematic.jpg)
-
-Figure 4 - Pulse sensor schematic
+  ![Headstone Image](Screenshot_2025-06-20_135255.png)
+  
+  Figure 2 - Circuit diagram of pulse sensor and display monitor connected
 
 
-![Headstone Image](joystick.webp)
+  ![Headstone Image](Screenshot_2025-06-30_150714.png)
+  
+  Figure 3 - Circuit diagram of joystick, LCD, and pulse sensor connected to the arduino
 
-Figure 5 - Joystick schematic
+
+  ![Headstone Image](PulseSensor-Schematic.jpg)
+
+  Figure 4 - Pulse sensor schematic
 
 
-![Headstone Image](potentiometer.jfif)
+  ![Headstone Image](joystick.webp)
 
-Figure 6 - Potentiometer schematic
+  Figure 5 - Joystick schematic
+
+
+  ![Headstone Image](potentiometer.jfif)
+
+  Figure 6 - Potentiometer schematic
+
 </p>
 
 # Code
