@@ -81,9 +81,9 @@ For me, it was challenging in multiple ways. For example, I thought the longest 
 Now that I am done with my starter project, I will use the knowledge of circuits and soldering to make my intensive project. My intensive project is the biometric health monitor.
 
 # Schematics 
-<p align="center">
+
   ![Headstone Image](Screenshot_2025-06-20_145014.png)
-  </p>
+  
   Figure 1 - Circuit diagram of LED circuit
 
 
