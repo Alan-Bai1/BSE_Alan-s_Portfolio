@@ -32,7 +32,7 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 **Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
-<iframe width="1521" height="561" src="https://www.youtube.com/embed/tVjvVxcEuak?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="914" height="514" src="https://www.youtube.com/embed/J7XCA21g0Ys?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Description
 
