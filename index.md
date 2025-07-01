@@ -83,7 +83,7 @@ Now that I am done with my starter project, I will use the knowledge of circuits
 # Schematics 
 <p align="center">
   ![Headstone Image](Screenshot_2025-06-20_145014.png)
-
+  </p>
   Figure 1 - Circuit diagram of LED circuit
 
 
@@ -111,7 +111,7 @@ Now that I am done with my starter project, I will use the knowledge of circuits
 
   Figure 6 - Potentiometer schematic
 
-</p>
+
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
