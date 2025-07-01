@@ -81,23 +81,18 @@ For me, it was challenging in multiple ways. For example, I thought the longest 
 Now that I am done with my starter project, I will use the knowledge of circuits and soldering to make my intensive project. My intensive project is the biometric health monitor.
 
 # Schematics 
-![Headstone Image](Screenshot_2025-06-20_145014.png)
 
+![Headstone Image](Screenshot_2025-06-20_145014.png)
 Figure 1 - Circuit diagram of LED circuit
 ![Headstone Image](Screenshot_2025-06-20_135255.png)
-
 Figure 2 - Circuit diagram of pulse sensor and display monitor connected
 ![Headstone Image](Screenshot_2025-06-30_150714.png)
-
 Figure 3 - Circuit diagram of joystick, LCD, and pulse sensor connected to the arduino
 ![Headstone Image](PulseSensor-Schematic.jpg)
-
 Figure 4 - Pulse sensor schematic
 ![Headstone Image](joystick.webp)
-
 Figure 5 - Joystick schematic
 ![Headstone Image](potentiometer.jfif)
-
 Figure 6 - Potentiometer schematic
 
 
