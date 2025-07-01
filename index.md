@@ -1,4 +1,4 @@
-# BlueStamp Biometric Health Monitor
++# BlueStamp Biometric Health Monitor
 The biometric health monitor is able to check a person's heartbeat at any time. There were many challenges including [insert challenges]. However, I learned to not give up and was able to [hopefully] complete the project.
 Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
 
@@ -36,11 +36,15 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 # Description
 
-After finishing my beats per minute, I immedietly started working on modifications. I first made it so it starts you off in a screen where you can choose within two options. However, I did not know how to choose between each option. I eventually decided on using a controller so you can move between options and press the button to confirm. The controller has 5 wires, one of them is for ground, another is for the power and the other three track whats it's doing. For example, one wire tracks the x position(left and right) and another is responsible for the y position(up and down). This works because there is a potentiometer that changes the current based off of where the joystick is facing. This is then interpreted to see where the joystick is. However, to change the amount of current it needs a potentiometer which works by using a wiper on a resistor track and moves the wiper depending on how much resistance is needed. For the button, when it is pressed, it completes an electrical circuit which tells the arduino whether or not it is pressed. I made another modification so that it makes the led light up if your heartbeat is over a certain level. I also added workout zones. There are 5 zones, 0-50% of your maximum heartrate, 50-60% and so on. Then, if you press the button again, it ends your exercise and shows you the percentage that you were in each zone. Once you are done, you can press the button again to restart it incase you want to use a different function like the BPM measurer.
+After finishing my beats per minute, I immedietly started working on modifications. I first made it so it starts you off in a screen where you can choose within two options. However, I did not know how to choose between each option. I eventually decided on using a controller(refer to figure 5) so you can move between options and press the button to confirm. The controller has 5 wires, one of them is for ground, another is for the power and the other three track whats it's doing. For example, one wire tracks the x position(left and right) and another is responsible for the y position(up and down). This works because there is a potentiometer(refer to figure 6) that changes the current based off of where the joystick is facing. This is then interpreted to see where the joystick is. However, to change the amount of current it needs a potentiometer which works by using a wiper on a resistor track and moves the wiper depending on how much resistance is needed. For the button, when it is pressed, it completes an electrical circuit which tells the arduino whether or not it is pressed. I made another modification so that it makes the led light up if your heartbeat is over a certain level. I also added workout zones. There are 5 zones, 0-50% of your maximum heartrate, 50-60% and so on. Then, if you press the button again, it ends your exercise and shows you the percentage that you were in each zone. Once you are done, you can press the button again to restart it incase you want to use a different function like the BPM measurer. Now, the circuit is made up of an arduino, breadboard, pulse sensor, LCD, and joystick(refer to figure 3).
 
 # Challenges
 
-However, this milestone was the hardest one of them all. This was mainly because of the amount of coding that it required. For example, I spent an entire day of debugging trying to figure out why my code jsut skipped a screen. Then, I realized that one line of code should be placed 3 lines earlier than it was. Another time, I was wondering why half my code did not work when I found out that a bracket was paired wrong and it excluded the code. I also did not know too much code
+However, this milestone was the hardest one of them all. This was mainly because of the amount of coding that it required. For example, I spent an entire day of debugging trying to figure out why my code jsut skipped a screen. Then, I realized that one line of code should be placed 3 lines earlier than it was. Another time, I was wondering why half my code did not work when I found out that a bracket was paired wrong and it excluded the code. I also did not know too much code especially with arrays. Arrays are a list that can store data as elements which can be changed or read to see the value.
+
+# Next Steps
+
+Now that I am done with my coding, I am going to make a case so that it is portable and you can exercise with it. This will be done with a 3D printer. I will also need to first plan it on CAD before printing it.
 
 # First Milestone
 
@@ -48,7 +52,7 @@ However, this milestone was the hardest one of them all. This was mainly because
 
 # Description
 
-The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor, arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. When, a heartbeat happens, blood flows and therefore less light ight is reflected. The pulse sensor detects that and counts it as a heartbeat and then counts the amount of heartbeats. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). 
+The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor(refer to figure 4), arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. When, a heartbeat happens, blood flows and therefore less light ight is reflected. The pulse sensor detects that and counts it as a heartbeat and then counts the amount of heartbeats. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). 
 
 # Challenges
 
@@ -81,6 +85,15 @@ Now that I am done with my starter project, I will use the knowledge of circuits
 Figure 1 - Circuit diagram of LED circuit
 ![Headstone Image](Screenshot_2025-06-20_135255.png)
 Figure 2 - Circuit diagram of pulse sensor and display monitor connected
+![Headstone Image](Screenshot_2025-06-30_150714.png)
+Figure 3 - Circuit diagram of joystick, LCD, and pulse sensor connected to the arduino
+![Headstone Image](PulseSensor-Schematic.jpg)
+Figure 4 - Pulse sensor schematic
+![Headstone Image](joystick.webp)
+Figure 5 - Joystick schematic
+![Headstone Image](potentiometer.jfif)
+Figure 6 - Potentiometer schematic
+
 
 # Code
 Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
