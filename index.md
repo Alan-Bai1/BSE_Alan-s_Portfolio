@@ -1,16 +1,25 @@
 # BlueStamp Biometric Health Monitor
-The biometric health monitor is able to check a person's heartbeat at any time as well as tracking the percentage of time in each exercise zone. There were many challenges like how I had no previous experience in coding or soldering. However, I learned to not give up and was able to complete the project.
+The biometric health monitor is able to check a person's heartbeat at any time as well as tracking the percentage of time in each cardio zone. It uses an LCD screen that displays information, a pulse sensor to detect the pulse, and a joystick similar to a controller to change the screen that the LCD is on.
 
-| Alan B | Crocker Middle School | Electrical Engineering | Incoming 8th Grader
+| **Engineer** | **School** | **Area of Interest** | **Grade** |
+| Alan B | Crocker Middle School | Electrical Engineering | Incoming 8th Grader |
 
 ![Headstone Image](WIN_20250616_16_24_52_Pro.jpg)
-  
+
+# Challenges and Lessons Learned
+
+I experienced many challenges while building my project. From coding to CAD, they were all an essential part of the process. For example, I had no experience coding and had to learn all the functions. I also needed to learn analog and digital pins on the arduino board for my project. In fact, everything taught at Bluestamp was new to me. CAD was also hard. Kevin had to teach me how tools like offset and extrude work. I also had to make a CAD drawing which is similar to a blueprint so anyone can recreate what I made. I also learned soldering for the first time and was able to "glue" two pieces of wire together using metal from soldering. My biggest challenge would probably be debugging though. It is easy to just write some code, but it is really hard to find out why it does not work. For example, I spent oer a day wondering why the code was not doing what it was supposed to when it turns out some brackets and other small stuff were messing it up. However, from these experiences, I learned some lessons. I learned how it is important to be persistent and never give up. I also learned that it is okay to ask for help when needed. Overall, Bluestamp was a great experience that not only taught skills, but also lessons.
+
+# Modifications
+
+I made several modifications and learned many things from it. I added exercise zones. Exercise zones are a way to tell how hard you are working in an exercise. Zone 1 is 0-50% of your maximum heartrate, zone 2 is 50-60% of your maximum heartrate and so on. For this, I used an array that saves the amount of time in each zone. An array is a list with elements that you can change. By changing the elements, you are able to read them later on which is basically how you can display data. However, I had two different screens, the BPM and the exercise zones. So, I used a joystick that can control what screen you are on. Then, I added the first screen to be a choice screen where you can choose between each option. To do this, I added a variable solely used to check what screen the user is on and what to display. From this experience, I learned a lot of coding. However, the code did not work. So, I spent over a day on debugging everything. Debugging is necessary to coding as there are many small mistakes that can be made. The debugging take a long time since there are many places that can have mistakes. For example, I spent over a day just to find out that one of my lines of code was 3 line lower then it should have been. I also spent over an hour realizing that my prackets were paired wrong and excluded code. This experience taught me persitence and to look thouroughly. Next, I designed a box for my arduino and parts. I made a CAD box that could fit my arduino and parts. However, this was a challenge since I had no prevoius experience. Luckily, my instructor taught me how to use autodesk. I learned how to use the tools like extrude and offset. This taught me how to work under pressure.
+
 # Final Milestone
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # Description
-Since the previous milestone, I added a box and soldered everything together. Now, you are able to bring it anywhere without worrying about it falling apart. The box was made with 3D printing. The soldering was by heating up an easily meltable metal and heating it up then cooling it so it glues two pieces together.
+Since the previous milestone, I added a box and soldered everything together. To make the box, you have to use CAD and design a box. To actually design the box, you have to measure each piece with a caliper. After that, you can make a sketch so then you can build the base and walls. However, you need to then use the extrude tool to make it in the third dimension. Then, you have to add an offset which accounts for extra room so everything can fit. Once, you build the box succesfully, you start the printing process. However, you also have to make a drawing of what you built. A drawing is similar to a blueprint so anyone who looks at it can recreate it. You have to dimension it so the people looking at it are able to tell what values are on each part. Now that the box is printed, you are able to bring it anywhere without worrying about it falling apart. The soldering was done by heating up an easily meltable metal and heating it up then cooling it so it glues two pieces together. 
 
 # Challenges
 
@@ -144,9 +153,9 @@ Now that I am done with my starter project, I will use the knowledge of circuits
 
 
 
-# Code
-Here's where you'll put your code. The syntax below places it into a block of code. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize it to your project needs. 
+# Appendix
 
+# Milestone 1 Code
 
 ```cpp
 void setup() {
@@ -163,20 +172,345 @@ void loop() {
 
 ```
 
+```cpp
+
+#define USE_ARDUINO_INTERRUPTS true
+#include <PulseSensorPlayground.h>
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27, 16, 2); // set the LCD address to 0x27 for a 16 chars and 2 line display
+
+ 
+// Constants
+
+const int PULSE_SENSOR_PIN = 0;  // Analog PIN where the PulseSensor is connected
+const int LED_PIN = 13;          // On-board LED PIN
+const int THRESHOLD = 550;       // Threshold for detecting a heartbeat
+
+
+// Create PulseSensorPlayground object
+PulseSensorPlayground pulseSensor;
+void setup()
+{
+  // Initialize Serial Monitor
+  Serial.begin(9600);
+  lcd.init();
+  lcd.backlight();
+  
+  pinMode(8, OUTPUT);
+  // Configure PulseSensor
+  pulseSensor.analogInput(PULSE_SENSOR_PIN);
+  pulseSensor.blinkOnPulse(LED_PIN);
+  pulseSensor.setThreshold(THRESHOLD);
+  delay(5000);
+  // Check if PulseSensor is initialized
+  if (pulseSensor.begin())
+  {
+    Serial.println("PulseSensor object created successfully!");
+
+    
+  }
+}
+
+void loop()
+{
+  // Get the current Beats Per Minute (BPM)
+  int currentBPM = pulseSensor.getBeatsPerMinute();
+  // Check if a heartbeat is detected
+  if (pulseSensor.sawStartOfBeat())
+  {
+    if (currentBPM>100){
+      Serial.println("ur cooked");
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("ur cooked");
+      digitalWrite(8, HIGH);  // turn the LED on (HIGH is the voltage level)
+      delay(100);                      // wait for a second
+      digitalWrite(8, LOW);
+      delay(100);
+    }
+      else {
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Heart Rate");
+        lcd.setCursor(0, 1);
+        lcd.print("BPM: ");
+        lcd.print(currentBPM);
+        delay(100);
+    }
+  }
+ 
+  // Add a small delay to reduce CPU usage
+}
+```
+
+# Milestone 2 Code
+
+```cpp
+#define VRX_PIN  A2 // Arduino pin connected to VRX pin
+#define VRY_PIN  A1 // Arduino pin connected to VRY pin
+#include <PulseSensorPlayground.h> //library pulse sensor
+#include <LiquidCrystal_I2C.h>     ///library LCD
+#include <ezButton.h>              ///library joystick
+int age = 0; // age variable
+
+const int PULSE_SENSOR_PIN = 0;  // Analog PIN where the PulseSensor is connected
+const int LED_PIN = 13;          // On-board LED PIN
+const int THRESHOLD = 600;       // Threshold for detecting a heartbeat
+#define SW_PIN   2                // Arduino pin connected to SW  pin
+int yValue = 0; // To store value of the X axis
+ezButton button(SW_PIN);LiquidCrystal_I2C lcd(0x27, 16, 2);
+int x=yValue;int MAX;int z[] = { 0, 0, 0, 0, 0, 0 };
+bool ZONE_UPDATES= false;int bValue = 0; 
+int screen = 0;int previousBPM;bool screenupdated = true;
+bool stop = true;
+PulseSensorPlayground pulseSensor;
+void setup() {
+  Serial.begin(9600) ;
+  lcd.init();lcd.backlight();lcd.clear();lcd.setCursor(0,0);lcd.print("what do u need?");lcd.setCursor(0,1);lcd.print("BPM         Zones");button.setDebounceTime(50);pinMode(8, OUTPUT);pulseSensor.analogInput(PULSE_SENSOR_PIN);pulseSensor.blinkOnPulse(LED_PIN);pulseSensor.setThreshold(THRESHOLD);
+  if (pulseSensor.begin())
+  {
+  Serial.println("PulseSensor object created successfully!");
+  }
+}
+
+void loop() {
+  
+  yValue = analogRead(VRY_PIN);
+  Serial.print("x = ");
+  Serial.print(yValue);
+  x=yValue;
+  bValue = button.getState();
+  Serial.println(screen);
+  button.loop();
+  if (screen == 5){
+      
+
+   x=yValue;
+  
+    if (x>900){
+
+      lcd.clear();
+      lcd.print("z1:");
+      lcd.print(100*z[0]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+      lcd.print("%  z2:");
+      lcd.print(100*z[1]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+      lcd.print("%");
+      lcd.setCursor(0,1);
+      lcd.print("z3:");
+      lcd.print(100*z[2]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+      lcd.print("%  z4:");
+      lcd.print(100*z[3]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+      lcd.print("%");
+      }
+    if (x<200){
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("z5:");
+      lcd.print(100*(z[4]+z[5])/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+      lcd.print("%");
+      lcd.setCursor(0,1);
+      lcd.print("press to go back");
+      stop = false;
+    }
+    button.getState();
+    Serial.println(stop);
+    if (button.isPressed() and stop == false){
+      screen = 0;
+      screenupdated = true;
+      }
+  }
+  if (screenupdated==true){
+    screenupdated = false;
+    if (screen == 3){
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("What is your age");
+      lcd.setCursor(0,1);
+      lcd.print("<--");
+      lcd.setCursor(8,1);
+      lcd.print(age);
+      lcd.setCursor(13,1);
+      lcd.print("-->");
+      screenupdated=false;
+    }
+    else if (screen==-1){
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("what do u need?");
+      lcd.setCursor(0,1);
+      lcd.print("BPM      -->Zones");
+    }
+    else if (screen == 1){
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("what do u need?");
+      lcd.setCursor(0,1);
+      lcd.print("BPM<--      Zones");
+    }
+    else if (screen == 0){
+      stop = true;
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("what do u need?"); 
+      lcd.setCursor(0,1);
+      lcd.print("BPM         Zones");
+    }
+  }
+if (screen == 2){
+ int currentBPM = pulseSensor.getBeatsPerMinute();
+ button.getState();
+    if (button.isPressed()){
+      screen = 0;
+      screenupdated = true;
+    }
+  if (pulseSensor.sawStartOfBeat())
+  {
+    if (currentBPM>200){
+      Serial.println("BPM>200!");
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("BPM>200!");
+      digitalWrite(8, HIGH);  // turn the LED on (HIGH is the voltage level)
+      delay(500);                      // wait for a second
+      digitalWrite(8, LOW);
+      delay(500);
+    }
+      else {
+        lcd.clear();
+        lcd.setCursor(0, 0);
+        lcd.print("Heart Rate");
+        lcd.setCursor(0, 1);
+        lcd.print("BPM: ");
+        lcd.print(currentBPM);
+        delay(1000);
+    }
+    
+  }
+}
+button.getState();
+  if (screen == 4){
+    button.getState();
+    int currentBPM = pulseSensor.getBeatsPerMinute();
+    if ((MAX/9999)<currentBPM and currentBPM<((6*MAX)/10)){
+      lcd.clear();lcd.setCursor(0,1);lcd.print(currentBPM);lcd.setCursor(0,0);lcd.print("You are in Zone1");int y =0;z[y] = z[y] + 1;delay(1000);
+    }
+    if (((6*MAX)/10)<currentBPM and currentBPM<((7*MAX))){
+      lcd.clear();
+      lcd.setCursor(0,1);
+      lcd.print(currentBPM);
+      lcd.setCursor(0,0);
+      lcd.print("You are in Zone2");
+      int y =1;
+      z[y] = z[y] + 1;
+      delay(1000);
+    }
+    if (((7*MAX)/10)<currentBPM and currentBPM<((8*MAX)/10)){
+      lcd.clear();lcd.setCursor(0,1);lcd.print(currentBPM);lcd.setCursor(0,0);lcd.print("You are in Zone3");int y =2;z[y] = z[y] + 1;delay(1000);
+    }
+    if (((8*MAX)/10)<currentBPM and currentBPM<((9*MAX)/10)){
+      lcd.clear();
+      lcd.setCursor(0,1);
+      lcd.print(currentBPM);
+      lcd.setCursor(0,0);
+      lcd.print("You are in Zone4");
+      int y =3;
+      z[y] = z[y] + 1;
+      delay(1000);
+    }
+    if (((9*MAX)/10)<currentBPM and currentBPM<(MAX)){
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print(currentBPM);
+      lcd.setCursor(0,1);
+      lcd.print("You are in Zone5");
+      int y =4;
+      z[y] = z[y] + 1;
+      delay(1000);
+    }
+    if (currentBPM>MAX){
+      lcd.clear();
+      lcd.setCursor(0,0);
+      lcd.print("WARNING!HIGH BPM");
+      lcd.setCursor(0,1);
+      lcd.print(currentBPM);
+      int y =5;
+      z[y] = z[y] + 1;
+      digitalWrite(8, HIGH);  // turn the LED on (HIGH is the voltage level)
+      delay(500);                      // wait for a second
+      digitalWrite(8, LOW);
+      delay(500);
+      }
+      button.getState();
+
+    if (button.isPressed()) {
+        
+           lcd.clear(); 
+           lcd.print("z1:");
+           lcd.print(100*z[0]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+           lcd.print("%  z2:");
+           lcd.print(100*z[1]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+           lcd.print("%");lcd.setCursor(0,1);lcd.print("z3:");
+           lcd.print(100*z[2]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+           lcd.print("%  z4:");
+           lcd.print(100*z[3]/(z[0]+z[1]+z[2]+z[3]+z[4]+z[5]));
+           lcd.print("%");
+           screen= 5;
+      }         
+    }
+    if (screen == 3){
+button.getState();
+if (button.isPressed() and screen == 3){
+      lcd.clear();
+      lcd.print("Your max BPM is  ");
+      lcd.setCursor(0,1);
+      lcd.print("around ");
+      MAX=220-age;
+      lcd.print(MAX);
+      delay(4000);
+      screen=4;
+      screenupdated=true;
+
+}
+      if (x>900){
+        delay(150);
+        age += 1;
+        screenupdated=true;
+      }
+    if (x<200){
+      delay(150);
+      age -= 1;
+      screenupdated=true;
+    }
+
+    
+
+    }
+    if (screen ==0 or screen == 1 or screen ==-1){
+    
+    if (button.isPressed() && screen == -1) {
+      screen=3;
+      screenupdated=true;
+    }
+    if (button.isPressed() and screen ==1 ) {
+      screen=2;
+      screenupdated=true;
+    }
+    if (x>900){
+      screen = 1;
+      screenupdated=true;
+      }
+    else if (x<200){
+      screen = -1;
+      screenupdated=true;
+      }
+    }
+}
+```
+
 # Bill of Materials
-Here's where you'll list the parts in your project. To add more rows, just copy and paste the example rows below.
-Don't forget to place the link of where to buy each component inside the quotation marks in the corresponding row after href =. Follow the guide [here]([url](https://www.markdownguide.org/extended-syntax/)) to learn how to customize this to your project needs. 
 
 | **Part** | **Note** | **Price** | **Link** |
 |:--:|:--:|:--:|:--:|
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
 | Item Name | What the item is used for | $Price | <a href="https://www.amazon.com/Arduino-A000066-ARDUINO-UNO-R3/dp/B008GRTSV6/"> Link </a> |
-
-# Other Resources/Examples
-One of the best parts about Github is that you can view how other people set up their own work. Here are some past BSE portfolios that are awesome examples. You can view how they set up their portfolio, and you can view their index.md files to understand how they implemented different portfolio components.
-- [Example 1](https://trashytuber.github.io/YimingJiaBlueStamp/)
-- [Example 2](https://sviatil0.github.io/Sviatoslav_BSE/)
-- [Example 3](https://arneshkumar.github.io/arneshbluestamp/)
-
-To watch the BSE tutorial on how to create a portfolio, click here.```
