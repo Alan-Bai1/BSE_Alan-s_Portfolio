@@ -7,9 +7,23 @@ The biometric health monitor is able to check a person's heartbeat at any time a
   
 # Final Milestone
 
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+# Description
+Since the previous milestone, I added a box and soldered everything together. Now, you are able to bring it anywhere without worrying about it falling apart. The box was made with 3D printing. The soldering was by heating up an easily meltable metal and heating it up then cooling it so it glues two pieces together.
+
+# Challenges
+
+This milestone had a lot of challenges. For example, I had no experience in 3D printing. I also had trouble soldering everything together. I had no idea how design a box in autodesk fusion. Luckily, my instructor Kevin Yuan helped me design the box. However, it still took quite a while since I had no idea what each tool was used for and how to use them. We were able to 3D print the box on time albeit on the last day. However, I also had to do a CAD drawing which is similar to a blueprint. Using the CAD drawing (refer to figure 7) 
+  ![Headstone Image](Drawing.png)
+
+  Figure 7 - Pulse sensor monitor box drawing
+
+anyone is able to reproduce the same thing. For soldering, even though there was a fan that filtered almost all of the toxic fumes, I was still kind of scared that I would suddenly develop a lung disease. That and the fact that I was nervous made soldering everything a challenge.
+
+# Next steps
+
+Although I finished my project. If I had more time I would add screws to everything so the box can be safely screwed together. It would also allow you to shake the box a little without hearing everything fall apart. I would also add more screens like something to detect high heartbeat jumps or something similar.
 
 For your final milestone, explain the outcome of your project. Key details to include are:
 - What you've accomplished since your previous milestone
