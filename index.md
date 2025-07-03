@@ -2,7 +2,7 @@
 The biometric health monitor is able to check a person's heartbeat at any time as well as tracking the percentage of time in each cardio zone. It uses an LCD screen that displays information, a pulse sensor to detect the pulse, and a joystick similar to a controller to change the screen that the LCD is on.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
-
+|:--:|:--:|:--:|:--:|
 | Alan B | Crocker Middle School | Electrical Engineering | Incoming 8th Grader |
 
 ![Headstone Image](WIN_20250616_16_24_52_Pro.jpg)
@@ -116,6 +116,17 @@ For me, it was challenging in multiple ways. For example, I thought the longest 
 # Next Steps
 
 Now that I am done with my starter project, I will use the knowledge of circuits and soldering to make my intensive project. My intensive project is the biometric health monitor.
+
+# Bill of Materials
+
+| **Part** | **Note** | **Price** | **Link** |
+|:--:|:--:|:--:|:--:|
+| Analog Joystick | Used to change screens | $4 | <a href="https://makersportal.com/shop/analog-joystick-arduinoraspberry-pi-compatible?"> Link </a> |
+| LCD 16x2 with I2C | Used to display the screen | $7 | <a href="https://store-usa.arduino.cc/products/16x2-lcd-display-with-i-c-interface?"> Link </a> |
+| Pulse Sensor | Used to measure each heartbeat | $1.66 | <a href="https://www.ebay.com/itm/221892151873"> Link </a> |
+| Arduino uno R3 | Microcontroller | $27.60 | <a href="https://store-usa.arduino.cc/products/arduino-uno-rev3?"> Link </a> |
+| 2x4 Metal Breadboard | Holds all wires | $5.99 | <a href="https://www.schmalztech.com/products/2-x-4-protoboard?"> Link </a> |
+| LED | Light that turns on when high heartbeat | $5.99 | <a href="https://shop.barnabasrobotics.com/products/3v-leds-for-arduino-and-raspberry-pi-projects?"> Link </a> |
 
 # Appendix
 
@@ -496,15 +507,4 @@ if (button.isPressed() and screen == 3){
     }
 }
 ```
-
-# Bill of Materials
-
-| **Part** | **Note** | **Price** | **Link** |
-|:--:|:--:|:--:|:--:|
-| Analog Joystick | Used to change screens | $4 | <a href="https://makersportal.com/shop/analog-joystick-arduinoraspberry-pi-compatible?"> Link </a> |
-| LCD 16x2 with I2C | Used to display the screen | $7 | <a href="https://store-usa.arduino.cc/products/16x2-lcd-display-with-i-c-interface?"> Link </a> |
-| Pulse Sensor | Used to measure each heartbeat | $1.66 | <a href="https://www.ebay.com/itm/221892151873"> Link </a> |
-| Arduino uno R3 | Microcontroller | $27.60 | <a href="https://store-usa.arduino.cc/products/arduino-uno-rev3?"> Link </a> |
-| 2x4 Metal Breadboard | Holds all wires | $5.99 | <a href="https://www.schmalztech.com/products/2-x-4-protoboard?"> Link </a> |
-| LED | Light that turns on when high heartbeat | $5.99 | <a href="https://shop.barnabasrobotics.com/products/3v-leds-for-arduino-and-raspberry-pi-projects?"> Link </a> |
 
