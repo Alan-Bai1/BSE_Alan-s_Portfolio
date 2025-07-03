@@ -12,7 +12,7 @@ The biometric health monitor is able to check a person's heartbeat at any time a
 I experienced many challenges while building my project. From coding to CAD, they were all an essential part of the process. For example, I had no experience coding and had to learn all the functions. I also needed to learn analog and digital pins on the arduino board for my project. In fact, everything taught at Bluestamp was new to me. CAD was also hard. Kevin had to teach me how tools like offset and extrude work. I also had to make a CAD drawing which is similar to a blueprint so anyone can recreate what I made. I also learned soldering for the first time and was able to "glue" two pieces of wire together using metal from soldering. My biggest challenge would probably be debugging though. It is easy to just write some code, but it is really hard to find out why it does not work. For example, I spent oer a day wondering why the code was not doing what it was supposed to when it turns out some brackets and other small stuff were messing it up. However, from these experiences, I learned some lessons. I learned how it is important to be persistent and never give up. I also learned that it is okay to ask for help when needed. Overall, Bluestamp was a great experience that not only taught skills, but also lessons.
 
 # Modifications
-![Headstone Image](unamed.jpg)
+![Headstone Image](unnamed.jpg)
 
 Completed Project
 
