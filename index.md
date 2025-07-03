@@ -14,7 +14,7 @@ I experienced many challenges while building my project. From coding to CAD, the
 # Modifications
 ![Headstone Image](unnamed.jpg)
 
-Completed Project
+Figure 1 - Completed project
 
 I made several modifications and learned many things from it. I added exercise zones. Exercise zones are a way to tell how hard you are working in an exercise. Zone 1 is 0-50% of your maximum heartrate, zone 2 is 50-60% of your maximum heartrate and so on. For this, I used an array that saves the amount of time in each zone. An array is a list with elements that you can change. By changing the elements, you are able to read them later on which is basically how you can display data. However, I had two different screens, the BPM and the exercise zones. So, I used a joystick that can control what screen you are on. Then, I added the first screen to be a choice screen where you can choose between each option. To do this, I added a variable solely used to check what screen the user is on and what to display. From this experience, I learned a lot of coding. However, the code did not work. So, I spent over a day on debugging everything. Debugging is necessary to coding as there are many small mistakes that can be made. The debugging take a long time since there are many places that can have mistakes. For example, I spent over a day just to find out that one of my lines of code was 3 line lower then it should have been. I also spent over an hour realizing that my prackets were paired wrong and excluded code. This experience taught me persitence and to look thouroughly. Next, I designed a box for my arduino and parts. I made a CAD box that could fit my arduino and parts. However, this was a challenge since I had no prevoius experience. Luckily, my instructor taught me how to use autodesk. I learned how to use the tools like extrude and offset. This taught me how to work under pressure.
 
@@ -27,11 +27,11 @@ Since the previous milestone, I added a box and soldered everything together. To
 
 # Challenges
 
-This milestone had a lot of challenges. For example, I had no experience in 3D printing. I also had trouble soldering everything together. I had no idea how design a box in autodesk fusion. Luckily, my instructor Kevin Yuan helped me design the box. However, it still took quite a while since I had no idea what each tool was used for and how to use them. We were able to 3D print the box on time albeit on the last day. However, I also had to do a CAD drawing which is similar to a blueprint. Using the CAD drawing (refer to figure 7) anyone is able to reproduce the same thing. For soldering, even though there was a fan that filtered almost all of the toxic fumes, I was still kind of scared that I would suddenly develop a lung disease. That and the fact that I was nervous made soldering everything a challenge.
+This milestone had a lot of challenges. For example, I had no experience in 3D printing. I also had trouble soldering everything together. I had no idea how design a box in autodesk fusion. Luckily, my instructor Kevin Yuan helped me design the box. However, it still took quite a while since I had no idea what each tool was used for and how to use them. We were able to 3D print the box on time albeit on the last day. However, I also had to do a CAD drawing which is similar to a blueprint. Using the CAD drawing (refer to figure 2) anyone is able to reproduce the same thing. For soldering, even though there was a fan that filtered almost all of the toxic fumes, I was still kind of scared that I would suddenly develop a lung disease. That and the fact that I was nervous made soldering everything a challenge.
 
 ![Headstone Image](Drawing.png)
 
-Figure 7 - Pulse sensor monitor box drawing
+Figure 2 - Pulse sensor monitor box drawing
 
 # Next steps
 
@@ -43,19 +43,21 @@ Although I finished my project. If I had more time I would add screws to everyth
 
 # Description
 
-After finishing my beats per minute, I immedietly started working on modifications. I first made it so it starts you off in a screen where you can choose within two options. However, I did not know how to choose between each option. I eventually decided on using a joystick (refer to figure 5) so you can move between options and press the button to confirm. The joystick has 5 wires, one of them is for ground, another is for the power and the other three track whats it's doing. For example, one wire tracks the x position(left and right) and another is responsible for the y position(up and down). This works because there is a potentiometer (refer to figure 6) that changes the current based off of where the joystick is facing. This is then interpreted to see where the joystick is. However, to change the amount of current it needs a potentiometer which works by using a wiper on a resistor track and moves the wiper depending on how much resistance is needed. For the button, when it is pressed, it completes an electrical circuit which tells the arduino whether or not it is pressed. I made another modification so that it makes the led light up if your heartbeat is over a certain level. I also added workout zones. There are 5 zones, 0-50% of your maximum heartrate, 50-60% and so on. Then, if you press the button again, it ends your exercise and shows you the percentage that you were in each zone. Once you are done, you can press the button again to restart it incase you want to use a different function like the BPM measurer. Now, the circuit is made up of an arduino, breadboard, pulse sensor, LCD, and joystick (refer to figure 3).
- 
-![Headstone Image](Screenshot_2025-06-30_150714.png)
-  
-Figure 3 - Circuit diagram of joystick, LCD, and pulse sensor connected to the arduino
-  
+After finishing my beats per minute, I immedietly started working on modifications. I first made it so it starts you off in a screen where you can choose within two options. However, I did not know how to choose between each option. I eventually decided on using a joystick (refer to figure 3) so you can move between options and press the button to confirm. The joystick has 5 wires, one of them is for ground, another is for the power and the other three track whats it's doing. For example, one wire tracks the x position(left and right) and another is responsible for the y position(up and down). This works because there is a potentiometer (refer to figure 4) that changes the current based off of where the joystick is facing. This is then interpreted to see where the joystick is. However, to change the amount of current it needs a potentiometer which works by using a wiper on a resistor track and moves the wiper depending on how much resistance is needed. For the button, when it is pressed, it completes an electrical circuit which tells the arduino whether or not it is pressed. I made another modification so that it makes the led light up if your heartbeat is over a certain level. I also added workout zones. There are 5 zones, 0-50% of your maximum heartrate, 50-60% and so on. Then, if you press the button again, it ends your exercise and shows you the percentage that you were in each zone. Once you are done, you can press the button again to restart it incase you want to use a different function like the BPM measurer. Now, the circuit is made up of an arduino, breadboard, pulse sensor, LCD, and joystick (refer to figure 5).
+
 ![Headstone Image](joystick.webp)
 
-Figure 5 - Joystick schematic
+Figure 3 - Joystick schematic
 
 ![Headstone Image](potentiometer.jfif)
 
-Figure 6 - Potentiometer schematic
+Figure 4 - Potentiometer schematic
+
+![Headstone Image](Screenshot_2025-06-30_150714.png)
+  
+Figure 5 - Circuit diagram of joystick, LCD, and pulse sensor connected to the arduino
+  
+
 
 # Challenges
 
@@ -71,23 +73,23 @@ Now that I am done with my coding, I am going to make a case so that it is porta
 
 # Description
 
-The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor (refer to figure 4), arduino uno, and a 16x2 LCD display monitor (refer to figure 8). The LCD works by having crystals between two polarized layers. When the crystals are twisted, no light can pass through making part of the screen look dark. When the crystal is untwisted, the light can pass illuminating the pixel of the screen. By using these crystals in unision, the LCD can display characters by light and dark pixels. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. When, a heartbeat happens, blood flows and therefore less light ight is reflected. The pulse sensor detects that and counts it as a heartbeat and then counts the amount of heartbeats. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). 
+The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 6). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor (refer to figure 7), arduino uno, and a 16x2 LCD display monitor (refer to figure 8). The LCD works by having crystals between two polarized layers. When the crystals are twisted, no light can pass through making part of the screen look dark. When the crystal is untwisted, the light can pass illuminating the pixel of the screen. By using these crystals in unision, the LCD can display characters by light and dark pixels. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. When, a heartbeat happens, blood flows and therefore less light ight is reflected. The pulse sensor detects that and counts it as a heartbeat and then counts the amount of heartbeats. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 9). 
 
 ![Headstone Image](Screenshot_2025-06-20_145014.png)
   
-Figure 1 - Circuit diagram of LED circuit
-  
-![Headstone Image](Screenshot_2025-06-20_135255.png)
-  
-Figure 2 - Circuit diagram of pulse sensor and display monitor connected
+Figure 6 - Circuit diagram of LED circuit
 
 ![Headstone Image](PulseSensor-Schematic.jpg)
 
-Figure 4 - Pulse sensor schematic
+Figure 7 - Pulse sensor schematic
 
-![Headstone Image](LCD_SCHEMATIC.jpg)
+ ![Headstone Image](LCD_SCHEMATIC.jpg)
 
 Figure 8 - LCD display schematic
+
+![Headstone Image](Screenshot_2025-06-20_135255.png)
+  
+Figure 9 - Circuit diagram of pulse sensor and display monitor connected
 
 # Challenges
 
