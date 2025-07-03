@@ -2,6 +2,7 @@
 The biometric health monitor is able to check a person's heartbeat at any time as well as tracking the percentage of time in each cardio zone. It uses an LCD screen that displays information, a pulse sensor to detect the pulse, and a joystick similar to a controller to change the screen that the LCD is on.
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
+
 | Alan B | Crocker Middle School | Electrical Engineering | Incoming 8th Grader |
 
 ![Headstone Image](WIN_20250616_16_24_52_Pro.jpg)
