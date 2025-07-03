@@ -1,15 +1,6 @@
-+# BlueStamp Biometric Health Monitor
-The biometric health monitor is able to check a person's heartbeat at any time. There were many challenges including [insert challenges]. However, I learned to not give up and was able to [hopefully] complete the project.
-Replace this text with a brief description (2-3 sentences) of your project. This description should draw the reader in and make them interested in what you've built. You can include what the biggest challenges, takeaways, and triumphs from completing the project were. As you complete your portfolio, remember your audience is less familiar than you are with all that your project entails!
+# BlueStamp Biometric Health Monitor
+The biometric health monitor is able to check a person's heartbeat at any time as well as tracking the percentage of time in each exercise zone. There were many challenges like how I had no previous experience in coding or soldering. However, I learned to not give up and was able to complete the project.
 
-You should comment out all portions of your portfolio that you have not completed yet, as well as any instructions:
-```HTML 
-<!--- This is an HTML comment in Markdown -->
-<!--- Anything between these symbols will not render on the published site -->
-```
-
-| **Engineer** | **School** | **Area of Interest** | **Grade** |
-|:--:|:--:|:--:|:--:|```
 | Alan B | Crocker Middle School | Electrical Engineering | Incoming 8th Grader
 
 ![Headstone Image](WIN_20250616_16_24_52_Pro.jpg)
@@ -29,8 +20,6 @@ For your final milestone, explain the outcome of your project. Key details to in
 
 
 # Second Milestone
-
-**Don't forget to replace the text below with the embedding for your milestone video. Go to Youtube, click Share -> Embed, and copy and paste the code to replace what's below.**
 
 <iframe width="914" height="514" src="https://www.youtube.com/embed/J7XCA21g0Ys?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Milestone 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -52,7 +41,11 @@ Now that I am done with my coding, I am going to make a case so that it is porta
 
 # Description
 
-The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1). Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor (refer to figure 4), arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. When, a heartbeat happens, blood flows and therefore less light ight is reflected. The pulse sensor detects that and counts it as a heartbeat and then counts the amount of heartbeats. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). 
+The first thing that I did was learn how to code for the arduino. I started off by making a simple blinking light using a LED circuit (refer to figure 1).   
+![Headstone Image](Screenshot_2025-06-20_145014.png)
+  
+  Figure 1 - Circuit diagram of LED circuit
+  Then, I learned how to code for the arduino. After, I believed I had enough knowledge to start building and coding the biometric health monitor. For the biometric health monitor, I used a pulse sensor (refer to figure 4), arduino uno, and a 16x2 LED display monitor. The pulse sensor detects when a heartbeat happens by tracing the amount of light that it produces and the amount of light absorbed. When, a heartbeat happens, blood flows and therefore less light ight is reflected. The pulse sensor detects that and counts it as a heartbeat and then counts the amount of heartbeats. It then sends a signal to the arduino which takes the average amount of heartbeats and converts it into the amount of heartbeats per minute. The display monitor then displays it so the user can read their heart rate. I was successful in coding and wiring the project to work (refer to figure 2). 
 
 # Challenges
 
