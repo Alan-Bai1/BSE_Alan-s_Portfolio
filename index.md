@@ -60,7 +60,7 @@ Moving on, I will need to code more to detect high heartbeats, a buzzer to alert
 
 # Starter Milestone
 
-<iframe width="914" height="514" src="https://www.youtube.com/embed/PsNnBoVI7NY?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="1521" height="561" src="https://www.youtube.com/embed/PsNnBoVI7NY" title="Alan B. Starter Project" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Description
 
