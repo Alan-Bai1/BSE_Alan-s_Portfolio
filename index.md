@@ -83,7 +83,7 @@ Figure 6 - Circuit diagram of LED circuit
 
 Figure 7 - Pulse sensor schematic
 
- ![Headstone Image](LCD_SCHEMATIC.jpg)
+ ![Headstone Image](LCD_SCHEMATIC.png)
 
 Figure 8 - LCD display schematic
 
