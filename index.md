@@ -20,7 +20,7 @@ I made several modifications and learned many things from it. I added exercise z
 
 # Final Milestone
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/F7M7imOVGug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="1521" height="561" src="https://www.youtube.com/embed/-IHDq-rNkMA?list=PLe-u_DjFx7eui8dmPGji-0-slT8KydYv_" title="Alan B. Modification" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 # Description
 Since the previous milestone, I added a box and soldered everything together. To make the box, you have to use CAD and design a box. To actually design the box, you have to measure each piece with a caliper. After that, you can make a sketch so then you can build the base and walls. However, you need to then use the extrude tool to make it in the third dimension. Then, you have to add an offset which accounts for extra room so everything can fit. Once, you build the box succesfully, you start the printing process. However, you also have to make a drawing of what you built. A drawing is similar to a blueprint so anyone who looks at it can recreate it. You have to dimension it so the people looking at it are able to tell what values are on each part. Now that the box is printed, you are able to bring it anywhere without worrying about it falling apart. The soldering was done by heating up an easily meltable metal and heating it up then cooling it so it glues two pieces together. 
