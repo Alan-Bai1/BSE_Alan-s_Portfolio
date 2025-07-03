@@ -85,7 +85,7 @@ Figure 2 - Circuit diagram of pulse sensor and display monitor connected
 
 Figure 4 - Pulse sensor schematic
 
-![Headstone Image](LCD_SCHEMATIC)
+![Headstone Image](LCD_SCHEMATIC.jpg)
 
 Figure 8 - LCD display schematic
 
